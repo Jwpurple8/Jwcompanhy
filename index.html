@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>capivarones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="forumContainer" style="display: none;">
+        <h1>os capivarones</h1>
+        <div class="new-post">
+            <textarea id="postContent" placeholder="Escreva sua mensagem..."></textarea>
+            <input type="file" id="postImage" accept="image/*">
+            <button onclick="addPost()">Postar</button>
+            <button onclick="logout()">Sair</button>
+        </div>
+        <div id="posts">
+            <!-- Posts aparecerão aqui -->
+        </div>
+    </div>
+    <div class="container" id="loginContainer">
+        <h1>Bem-vindo ao Fórum Simples</h1>
+        <input type="text" id="username" placeholder="Digite seu nome">
+        <button onclick="login()">Entrar no Fórum</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
